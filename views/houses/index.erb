@@ -1,0 +1,7 @@
+<% for house in @all_houses %>
+<p>House Name: <%= house.name %> </p>
+<img src="<%= house.url %>" alt="logo">
+<p>Id: <%= house.id %> </p>
+<a href="/houses/<%= house.id %>">Show House</a>
+
+<% end %>
